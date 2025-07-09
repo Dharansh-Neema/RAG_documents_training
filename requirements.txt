@@ -3,3 +3,6 @@ langgraph
 langchain-community
 langchain-text-splitters
 python-dotenv
+PyPDF2
+beautifulsoup4
+html2text
