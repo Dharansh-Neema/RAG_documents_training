@@ -6,3 +6,4 @@ python-dotenv
 PyPDF2
 beautifulsoup4
 html2text
+pandas
