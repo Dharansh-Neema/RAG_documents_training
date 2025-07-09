@@ -7,3 +7,4 @@ PyPDF2
 beautifulsoup4
 html2text
 pandas
+chromadb
