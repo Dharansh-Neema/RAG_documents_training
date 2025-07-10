@@ -63,7 +63,7 @@ def generate_response(query):
         response = llm.invoke(prompt).content
         
         logger.info(f"Generated response for query.")
-        return response
+        return response,retrieved_docs
         
     except Exception as e:
         logger.error(f"Error generating response: {str(e)}")
@@ -73,6 +73,7 @@ def generate_response(query):
 if __name__ == "__main__":
     # Example usage
     user_query = "What is the maximum number of items that can be listed on eBay?"
-    response = generate_response(user_query)
+    response,retrieved_docs = generate_response(user_query)
     print(f"\nQuery: {user_query}\n")
     print(f"Response:\n{response}")
+    print(f"Retrieved Documents:\n{retrieved_docs}")
