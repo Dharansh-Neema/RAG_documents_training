@@ -32,8 +32,6 @@ def store_in_vector_db():
                 embedding = pd.read_csv(embedding_file[i])
                 collection.add(
                     documents=[text],
-                    metadatas=[{"chunk": i+1}],
-                    embeddings=[embedding.values[0].tolist()],
                     ids=[f"id_{i+1}"]
                 )
         
